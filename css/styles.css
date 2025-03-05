@@ -1,0 +1,26 @@
+/* Импорты и переменные */
+@import url('colors.css');
+/* Общие (глобальные) стили */
+@import url('normalize.css');
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+/* Сетка и структура (Layout) */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Стилизация основных элементов (типографика, кнопки, ссылки) */
+/* Стили для секций и компонентов */
+/* Медиа-запросы (адаптивность) */
+
+h1 {
+  color: var(--accent-color);
+}
+header {
+  background-color: var(--dark-color);
+}
