@@ -8,21 +8,44 @@
   </head>
   <body>
     <header>
-      <div>logo</div>
-      <nav>
-        <ul>
-          <li>послуги</li>
-          <li>парйс</li>
-          <li>контакти</li>
-        </ul>
-      </nav>
+      <div class="container header_container">
+        <div>
+          <a href="#"> <p class="logo">logo</p></a>
+        </div>
+        <nav class="header_nav">
+          <ul class="header_nav_list">
+            <li>
+              <a href="#usługi">usługi które świadczymy</a>
+            </li>
+            <li><a href="#">projekty</a></li>
+            <li><a href="#">cena</a></li>
+            <!-- <li><a href="#">контакти</a></li> -->
+          </ul>
+        </nav>
+        <div>
+          <ul>
+            <li>
+              <a href="tel:"><p>tel: +48 781 663 568</p></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>klimatyzacja i wentylacja</h1>
+      <section class="hero">
+        <div class="container hero_container">
+          <h1 class="hero_title">Kompleksowe rozwiązania klimatyczne</h1>
+          <ul class="hero_list">
+            <li><p>- Wentylacja</p></li>
+            <li><p>- Klimatyzacja</p></li>
+            <li><p>- Rekuperatory</p></li>
+            <li><p>- Pompy ciepła</p></li>
+          </ul>
+          <p class="hero_bottom_text">produkcja - przemysł - dom - biuro</p>
+        </div>
       </section>
       <section class="container">
-        <h2>Sekcja Usług</h2>
+        <h2 id="usługi" >Sekcja Usług</h2>
         <ul>
           <li>
             <h3>instalacja</h3>
@@ -39,7 +62,7 @@
         </ul>
       </section>
       <section class="container">
-        <h3>Sekcja O nas</h3>
+        <h2>Sekcja O nas</h3>
         <ul>
           <li>
             <h4>jesteśmy super profesjonalistami</h4>

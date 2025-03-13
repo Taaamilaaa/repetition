@@ -1,26 +1,118 @@
-/* Импорты и переменные */
-@import url('colors.css');
-/* Общие (глобальные) стили */
+/* Общие настройки (reset/normalize, переменные, базовые стили)*/
 @import url('normalize.css');
+@import url('variables.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font-main);
   background-color: var(--primary-color);
   color: var(--secondary-color);
   line-height: 1.6;
 }
-/* Сетка и структура (Layout) */
-.container {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* Стилизация основных элементов (типографика, кнопки, ссылки) */
-/* Стили для секций и компонентов */
-/* Медиа-запросы (адаптивность) */
 
+/* Стили для глобальных элементов (типографика, ссылки, кнопки) */
 h1 {
   color: var(--accent-color);
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: left;
+}
+h2 {
+  color: var(--accent-color);
+  text-align: center;
+}
+section {
+  padding: 0 20px 0 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+
+/* Сетка (Layout) */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 35px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(188, 250, 17, 0.928);
+  text-transform: uppercase;
 }
 header {
   background-color: var(--dark-color);
 }
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.header_nav_list {
+  display: flex;
+  gap: 20px;
+}
+.header_nav_list li a {
+  color: var(--accent-color);
+  font-weight: bold;
+  padding: 15px;
+}
+
+.hero {
+  background-image: linear-gradient(to right, #1e1e1e, #1e1e1e33),
+    url('/img/abstr.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero_container {
+  padding: 50px 20px 50px 20px;
+}
+.hero_title {
+  margin-bottom: 35px;
+}
+.hero_list {
+  max-width: 50%;
+  margin: 0 auto auto 0;
+  display: grid;
+  grid-template-columns: auto minmax(50%, 50%);
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.hero_list li {
+  padding: 10px;
+  background-color: #c5e53829;
+}
+
+.hero_list li p {
+  font-size: 18px;
+}
+.hero_bottom_text {
+  color: var(--accent-color);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+/* Компоненты (Карточки, модальные окна, формы)*/
+/* Анимации и эффекты */
+/* Медиа-запросы (адаптивность) */
